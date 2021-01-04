@@ -1,0 +1,279 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  color: black;
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+}
+
+a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subject {
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.subject:hover {
+  border: 2px solid #2ecc71;
+}
+
+.links {
+  transition: 0.25s;
+}
+
+.links:hover {
+  transform: scale(1.2);
+  background-color: #b8b8b8;
+}
+
+label {
+  color: black;
+}
+.padding {
+  padding: 0px;
+  padding-bottom: 120px;
+}
+
+.normal {
+  float: right;
+}
+
+.normal:hover {
+  background: #3498db;
+}
+
+.title {
+  float: left;
+}
+
+.title:hover {
+  background: #2ecc71;
+}
+
+.box {
+  width: 350px;
+  padding: 40px;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f0f0f0;
+  text-align: center;
+  border: 0;
+  border-radius: 24px;
+  color: #4e4e4e;
+}
+
+.boxv {
+  width: 300px;
+}
+
+.box h1 {
+  /* color: black; */
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box h2,
+h4 {
+  /* color: #3498db; */
+}
+
+.box span {
+  /* color: #2ecc71; */
+}
+
+.box h3,
+a {
+  /* color: #2ecc71; */
+}
+
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"],
+.box input[type="number"],
+.box input[type="tel"] {
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.boxv input {
+  display: block;
+}
+
+.box input[type="text"]:hover,
+.box input[type="password"]:hover,
+.box input[type="email"]:hover,
+.box input[type="number"]:hover,
+.box input[type="tel"]:hover {
+  /* width: 280px; */
+  border-color: #2ecc71;
+}
+
+.box input [type="text"]:focus,
+.box input[type="password"]:focus,
+.box input[type="email"]:focus,
+.box input[type="number"]:focus,
+.box input[type="tel"]:focus {
+  /* width: 280px; */
+  border-color: #2ecc71;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  cursor: pointer;
+  display: block;
+  width: 8px;
+  text-align: center;
+  position: relative;
+}
+
+input[type="number"]:hover::-webkit-inner-spin-button,
+input[type="number"]:focus::-webkit-inner-spin-button {
+  background: url(../images/arrow.png) no-repeat 50% 50%;
+  width: 14px;
+  height: 14px;
+  padding: 4px;
+  position: relative;
+  right: 4px;
+  border-radius: 28px;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: black;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.boxv input[type="submit"] {
+  display: block;
+}
+
+.index_a {
+  text-decoration: none;
+  border: 0;
+  background: #3498db;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.index_a:hover {
+  background: #2ecc71;
+}
+
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+  color: white;
+}
+
+.box_a {
+  text-decoration: none;
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 25% auto;
+  background: black;
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  color: white;
+}
+
+.popup a {
+  color: white;
+  text-align: none;
+  padding: none;
+  text-decoration: none;
+}
+
+.popup .close {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  transition: all 200ms;
+  text-decoration: none;
+  color: #3498db;
+}
+
+.popup .close:hover {
+  color: #2ecc71;
+}
+
+table {
+  color: white;
+}
